@@ -2,6 +2,20 @@
 
 Sistema per il controllo remoto di porta e luce scale tramite bot Telegram, con visualizzazione stato e log su display OLED.
 
+## Descrizione del Progetto
+
+Questo progetto consente di controllare un citofono (apriporta) e la luce delle scale tramite un bot Telegram, utilizzando una scheda ESP8266 D1 mini e un display OLED 128x64. Il sistema permette di:
+
+- Aprire la porta d'ingresso da remoto
+
+- Accendere la luce delle scale da remoto
+
+- Visualizzare stato e log delle operazioni su display OLED
+
+- Gestire l’accesso tramite una lista di utenti autorizzati
+
+
+
 ## Funzionalità principali
 
 - **Controllo porta**: apertura della porta tramite comando Telegram o pulsante fisico.
@@ -12,6 +26,13 @@ Sistema per il controllo remoto di porta e luce scale tramite bot Telegram, con 
 - **Feedback sonoro**: buzzer opzionale per conferma sonora delle operazioni.
 - **Sicurezza**: controllo accessi tramite lista di chat ID autorizzati.
 
+## Hardware Necessario
+- ESP8266 D1 mini
+- Display OLED SSD1306 128x64 (I2C)
+- 2 Relè (porta, luce)
+- Buzzer (opzionale)
+- Pulsante (NO - normalmente aperto)
+- Alimentazione 3.3V/5V
 
 ## Schema collegamenti hardware
 
@@ -27,8 +48,6 @@ Sistema per il controllo remoto di porta e luce scale tramite bot Telegram, con 
 | VCC relè | 3.3V/5V |  |  |
 | VCC OLED | 3.3V |  |  |
 | GND | GND |  | Comune a tutti i dispositivi |
-
-**Nota:** Il pulsante deve essere premuto fino a conferma sonora.
 
 ## Librerie necessarie
 
@@ -71,7 +90,7 @@ Installare tramite Library Manager di Arduino IDE:
 - All’avvio, il sistema si connette al WiFi e verifica la connessione al bot Telegram.
 - Il display OLED mostra:
     - Nome sistema (es. “D1 Mini Apriporta”)
-    - Ultime operazioni (utente + azione + tempo trascorso)
+    - Ultime operazioni (utente + azione + tempo trascorso) **Nota:** niente al primo avvio.
     - Stato connessioni WiFi e Telegram
 - Gli utenti autorizzati possono inviare comandi via Telegram.
 - La porta può essere aperta anche tramite pulsante fisico collegato a D3.
@@ -103,7 +122,7 @@ Installare tramite Library Manager di Arduino IDE:
 
 ## Autore
 
-- [Tuo Nome o Nickname]
+- FyaSKoBoVe
 - Basato su librerie open source per ESP8266 e Telegram Bot
 
-**Per domande o suggerimenti, apri una issue o contattami su Telegram!**
+**Per domande o suggerimenti, apri una issue**
