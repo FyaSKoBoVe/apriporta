@@ -55,11 +55,11 @@
 #include <Adafruit_SSD1306.h>
 
 // ================ CONFIGURAZIONE WIFI =====================
-const char* ssid = "FRITZ!Box-Caso";
-const char* password = "16804554489787417780";
+const char* ssid = "your_ssid";
+const char* password = "your_password";
 
 // ==== TOKEN DEL BOT TELEGRAM (ottienilo da @BotFather) ====
-#define BOT_TOKEN "8070774785:AAHiCzuEPMRVzndtYvfSVBGtZ80grYRiYVc"
+#define BOT_TOKEN "xxxxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 // ========= LISTA CHAT ID DEGLI UTENTI AUTORIZZATI =========
 const long authorizedUsers[] = {
