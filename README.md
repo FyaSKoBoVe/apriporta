@@ -119,6 +119,9 @@ Installare tramite Library Manager di Arduino IDE:
 +------------------------+
 ```
 
+## Versione
+
+ver. 1.0
 
 ## Autore
 
