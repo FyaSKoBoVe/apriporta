@@ -63,9 +63,9 @@ const char* password = "your_password";
 
 // ========= LISTA CHAT ID DEGLI UTENTI AUTORIZZATI =========
 const long authorizedUsers[] = {
-  41708465L,
-  1646851004L,
-  111541688L,
+  12345678L,    // sono di esempio.
+  987654321L,   // Da cambiare con
+  192837654L,   // gli Id degli utilizzatori.
 };
 
 // =================== PIN CONFIGURATION ===================
