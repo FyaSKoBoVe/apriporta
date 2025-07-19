@@ -2,6 +2,8 @@
 
 Sistema per il controllo remoto di porta e luce scale tramite bot Telegram, con visualizzazione stato e log su display OLED.
 
+Visto la semplicità del codice e la poca possibilità di configurazione esterna, il programma si adatta ad un uso personale e immutabile nel tempo.
+
 ## Descrizione del Progetto
 
 Questo progetto consente di controllare un citofono (apriporta) e la luce delle scale tramite un bot Telegram, utilizzando una scheda ESP8266 D1 mini e un display OLED 128x64. Il sistema permette di:
@@ -14,7 +16,7 @@ Questo progetto consente di controllare un citofono (apriporta) e la luce delle 
 
 - Gestire l’accesso tramite una lista di utenti autorizzati
 
-
+- Le variabili `ssid`, `password`, e `BOT_TOKEN` e `authorizedUsers` vanno cambiate all'interno del programma.
 
 ## Funzionalità principali
 
