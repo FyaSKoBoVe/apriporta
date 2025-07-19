@@ -130,4 +130,8 @@ ver. 1.0
 - FyaSKoBoVe
 - Basato su librerie open source per ESP8266 e Telegram Bot
 
+## LICENSE
+
+GPLv3
+
 **Per domande o suggerimenti, apri una issue**
